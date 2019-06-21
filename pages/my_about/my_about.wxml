@@ -1,0 +1,12 @@
+<view class='wrap'>
+    <text>关于我们 ：咸鱼团队</text>
+    <view></view>
+    <text>成员介绍 ：</text>
+    <text>function teamer(name,school,task){   </text>
+    <text>   console.log("name"+name+"school"+school+"task"+task);  </text>
+    <text>  }  </text>
+    <text>teamer("高朝凤"，"吉林建筑大学"，“队长，拉去祭天”);</text>
+    <text>teamer("田娟"，"长春大学"，“UI,美工，文档书写”);</text>
+    <text>teamer("吴双龙"，"吉林建筑大学"，“酷爱熬夜的码农”);</text>            
+    <text>联系我们 ：</text>
+</view>

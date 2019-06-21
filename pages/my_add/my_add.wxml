@@ -1,0 +1,48 @@
+<view class='wrap'>
+    <view class='add_img'>
+        <block wx:for="{{addimg}}" wx:for-item="item" wx:for-index='index' wx:key='me'>
+            <image src='{{item.imgs}}'></image>
+        </block>
+        <image src='../../icon/add_img.png' bindtap='to_change' class='{{over}}'></image>
+    </view>
+    <form bindsubmit='message' bindreset='message_ret'>
+        <view class='kind_box'>
+            <picker bindchange="bindKindChange" value="{{index1}}" name='kind' range="{{kindArray}}">
+                <view class='add_kind'>
+                    类别：{{kindArray[index1]}}
+                </view>
+            </picker>
+        </view>
+        <view class='level_box'>
+            <picker bindchange="bindLevelChange" value="{{index2}}" range="{{levelArray}}">
+                <view class='add_level'>
+                    新旧度：{{levelArray[index2]}}
+                </view>
+            </picker>
+        </view>
+        <view class='place_box'>
+            <text>交易地点</text>
+            <input type='text' bindinput='to_dealPlace'></input>
+        </view>
+        <view class='price_box'>
+            <text>价格</text>
+            <input type='text' bindinput='to_dealPrice' name='price'></input>
+        </view>
+        <view class='time_box'>
+            <picker mode="date" value="{{date}}" start="{{start_time}}" end="2099-1-23" bindchange="bindDateChange">
+                <view class="picker">
+                    交易日期: {{dates}}
+                </view>
+            </picker>
+        </view>
+        <view class='time_box'>
+            <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+                <view class="picker">
+                    具体时间 : {{times}}
+                </view>
+            </picker>
+        </view>
+        <textarea class='add_content' placeholder='描述一下你的宝贝吧(请不要超过150个字)' value='{{goodsinfo}}' bindinput='to_goodsInfo' />
+        <button class='bottom_issue' form-type='creat_message' bindtap='post_message'>发 布</button>
+    </form>
+</view>

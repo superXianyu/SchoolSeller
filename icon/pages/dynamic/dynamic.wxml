@@ -1,0 +1,36 @@
+<view class='wrap'>
+  <block wx:for="{{moodsList}}" wx:for-item="item" wx:for_index="index" wx:key="me" wx:for-index="index">
+    <view class='moods_share'>
+      <view class='share_top' id='{{item.moodsId}}'>
+        <image class='touxiang' src='{{item.touxiang}}'></image>
+        <view class='name_sex'>{{item.nickName}} {{item.sex}}</view>
+        <view class='share_time' id="{{item.shareTime}}">{{item.shareTime}}</view>
+        <view class='_locate'>{{item.school}}</view>
+      </view>
+      <view class='share_content' bindtap='to_detail' id='{{item.moodsId}}'>
+        <text>{{item.shareContent}}</text>
+      </view>
+      <view class='share_img' bindtap='to_showImg' id='{{index}}'>
+        <image wx:for="{{item.shareImg}}" wx:for-item="imgItem" src='{{imgItem}}' wx:for-index="imgIndex" wx:if="{{imgItem!=null}}" wx:key="img" id="{{imgIndex}}" data-src='{{imgItem}}'></image>
+      </view>
+      <view class='share_bottom'>
+        <view class='forward_box' bindtap='to_forward' id='{{item.moodsId}}'>
+          <image src='../../icon/forward.png'></image>
+          <text></text>
+        </view>
+        <view class='comment_box' id='{{item.moodsId}}' bindtap='to_comment'>
+          <image src='../../icon/comment.png'></image>
+          <text></text>
+        </view>
+        <view class='like_box' bindtap='to_like' id='{{item.moodsId}}'>
+          <image src='{{item.likeImg}}' id='{{index}}'></image>
+          <text id='{{index}}'>{{item.likeNum}}</text>
+        </view>
+      </view>
+      <view class='cut_line'></view>
+    </view>
+  </block>
+  <view class='add_active' bindtap='to_addActive'>
+    <image src='../../icon/add_img.png'></image>
+  </view>
+</view>

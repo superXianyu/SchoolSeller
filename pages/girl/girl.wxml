@@ -1,0 +1,46 @@
+<view class='warp'>
+    <view class="navigationbar">
+        <input type='txt' class='search' bindinput='get_word' name='in_word' value='{{search_value}}'>
+        <image src='{{img_navigation_search}}' class='search_img' bindtap='search'></image>
+        </input>
+    </view>
+    <view class='content'>
+        <view class='choose_bar_box'>
+            <view class='{{clothes}}' bindtap='to_clothes'>
+                服饰
+                <view class='dout2'  style='display:{{is_show0}}' ></view>
+            </view>
+            <view class='{{electron}}' bindtap='to_electron'>
+                电子设备
+                <view class='dout1' style='display:{{is_show1}}'></view>
+            </view>
+            <view class='{{study}}' bindtap='to_study'>
+                学习用具
+                <view class='dout1' style='display:{{is_show2}}'></view>
+            </view>
+            <view class='{{others}}' bindtap='to_others'>
+                其他
+                <view class='dout2' style='display:{{is_show3}}'></view>
+            </view>
+        </view>
+        <view class='dian'></view>
+        <block wx:for='{{goods}}' wx:for-index='index' wx:for-item='item' wx:key='me'>
+            <view class='goodsCla' bindtap='to_goods' id='{{item.post_id}}'>
+                <image src='{{item.imgs}}' class='goods_img'></image>
+                <text class='goods_word'>{{item.goods_word}}</text>
+                <text class='goods_price'>¥ : {{item.goods_price}}</text>
+            </view>
+        </block>
+        <view class='add_active' bindtap='to_addActive'>
+            <image src='../../icon/add_img.png'></image>
+        </view>
+    </view>
+    <view class='let_bottom'>
+        <!-- <view class='goodsNUll' wx:if="{{goodsNull}}">
+      <text>暂无此类商品，快去发布吧</text>
+    </view> -->
+        <view class='loading' catchtap='toLoading'>
+            {{loadingText}}
+        </view>
+    </view>
+</view>

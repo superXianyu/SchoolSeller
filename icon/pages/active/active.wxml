@@ -1,0 +1,15 @@
+<!--pages/active/active.wxml-->
+<view class='wrap'>
+  <form>
+    <view class='share_content'>
+      <textarea bindinput='to_shareContent' placeholder='分享下你的心情吧' name='content'></textarea>
+    </view>
+    <button class='bottom_issue' form-type='creat_message' bindtap='post_message'>分 享</button>
+  </form>
+  <view class='mood_img'>
+    <block wx:for="{{addMoodImg}}" wx:for-item="item" wx:for-index='index' wx:key='me'>
+      <image src='{{item}}' bindtap='to_preview' data-src='{{item}}' id='{{index}}'></image>
+    </block>
+    <image src='../../icon/add_img.png' bindtap='to_change' class='{{over}}'></image>
+  </view>
+</view>

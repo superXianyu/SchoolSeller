@@ -1,0 +1,38 @@
+<view class='wrap'>
+    <swiper indicator-dots='true' indicator-color='#ffffff' indicator-active-color='#96c85c' autoplay='ture' duration='1000' class='slid_box'>
+    <block wx:for="{{slider}}" >
+        <swiper-item>
+        <image src='{{item}}' class='slid_img' data-index='{{index}}' bindtap='see_img'></image>
+        </swiper-item>
+    </block>
+    </swiper>
+    <view class='message_top'>
+        <text class='price'>¥ ：{{price}}</text>
+        <view class="is_new">新旧程度 ：{{is_new}}</view>
+        <view class='category_box'>
+            类别：
+            <view class='sex'>{{sex}}</view>
+             <view class='category'>{{category}}</view>
+        </view>
+        <view class='like'><image src='{{likeImg}}' bindtap='to_like'></image></view>
+        <view class='describ_box'>{{describ_word}}</view>
+    </view>
+    <view class='cut_line'></view>
+    <view class='adress_box'>
+        <view class='school'>学校 ：{{school}}</view>
+        <view class='adress'>地址 ：{{adress}}</view>
+        <view class='time'>交易时间 ：{{time}}</view>
+    </view>
+    <view class='cut_line'></view>
+    <view class="write_seller">卖家：</view>
+    <view class='spird_line'></view>
+    <view class='seller'>
+        <image src='{{seller_img}}' class='touxiang'></image>
+        <view class='nick_name'>{{nick_name}}</view>
+        <text class='seller-sex'>{{seller_sex}}</text>
+        <text class='seller_age'>{{seller_age}}</text>
+    </view>
+    <view class='reserve_box'>
+        <view class='reserve' bindtap='put_to_bill'>立即预定</view>
+    </view>
+</view>

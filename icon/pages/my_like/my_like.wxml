@@ -1,0 +1,18 @@
+<view class='wrap'>
+    <view class='my_mess_box'>
+        <view class='img_box'>
+            <image src='{{touxiang}}'></image>
+        </view>
+        <text class='nick_name'>{{nick_name}}</text>
+    </view>
+    <block wx:for="{{menu}}" wx:for-item='item' wx:for-index="index" wx:key="me">
+        <view class='pulish_box' data-post_id='{{item.post_id}}' bindtap='to_goods'>
+            <image src='{{item.imgs}}'></image>
+            <text class='describ_word'>{{item.describ_word}}</text>
+            <text class='author'>@{{item.author}}</text>
+            <view class='like_img' bindtap='to_like' id='{{userInfoId}}'>
+             <image src='{{item.likeImg}}' ></image>
+            </view>
+        </view>
+    </block>
+</view>

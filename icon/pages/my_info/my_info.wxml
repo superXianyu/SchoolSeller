@@ -1,0 +1,15 @@
+<view class='wrap'>
+   <view class='my_mess_box'>
+        <view class='img_box'>
+            <image src='{{touxiang}}'></image>
+        </view>
+        <text class='nick_name'>{{nick_name}}</text>
+    </view>
+    <view class='mess_list'>
+      <view class='school_box'>
+         学校 ： 
+        <input type='text'  class='school' bindinput='school_name' placeholder='{{user_school}}'></input>
+      </view>
+    </view>
+    <view class='sure' bindtap='sure'>提交</view>
+</view>

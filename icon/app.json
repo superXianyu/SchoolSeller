@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/girl/girl",
+    "pages/my/my",
+    "pages/my_pulish/my_pulish",
+    "pages/my_like/my_like",
+    "pages/my_bill/my_bill",
+    "pages/my_about/my_about",
+    "pages/my_info/my_info",  
+    "pages/logs/logs",
+    "pages/goods/goods",
+    "pages/dynamic/dynamic",
+    "pages/my_add/my_add",
+    "pages/active/active",
+    "pages/comments/comments"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#96c85c",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedcolor": "#86c85c",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/girl/girl",
+        "text": "小跳",
+        "iconPath": "icon/unboy.png",
+        "selectedIconPath": "icon/boy.png"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "咸鱼圈",
+        "iconPath": "icon/undynamic.png",
+        "selectedIconPath": "icon/dynamic.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "小蚤",
+        "iconPath": "icon/unmy.png",
+        "selectedIconPath": "icon/my.png"
+      }
+    ]
+  }
+}

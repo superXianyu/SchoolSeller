@@ -1,0 +1,142 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #333;
+    margin: 30rpx 30rpx;
+}
+
+.add_img{
+  width: 93%;
+  /* height: 424rpx; */
+}
+
+ .add_img image{
+  width: 200rpx;
+  height: 200rpx;
+  border: 1rpx #dfe1e0 solid;
+  margin: 8rpx 8rpx;
+}
+
+.add_img .put_img {
+    display: none;
+}
+
+.kind_box{
+  width: 100%;
+  height: 40px;
+  line-height: 40rpx;
+}
+
+.add_kind{
+  height: 40px;
+  position: absolute;
+  width: 690rpx; 
+}
+
+.level_box{
+  width: 100%;
+  height: 40px;
+  line-height: 40rpx;
+}
+
+.add_level{
+  height: 40px;
+  position: absolute;
+  width: 690rpx; 
+}
+
+.place_box{
+  width: 100%;
+  height: 40px;
+  line-height: 40rpx;
+  position: relative;
+}
+
+.place_box text {
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  position: absolute;
+  top: 0px;
+}
+
+.place_box input {
+  width: 80%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  position: absolute;
+  left: 65px;
+}
+
+.time_box{
+  width: 90%;
+  height: 40px;
+  line-height: 40rpx;
+  position: relative;
+}
+
+.time_box text {
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  position: absolute;
+  top: 0px;
+}
+
+.time_box input {
+  width: 80%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  position: absolute;
+  left: 65px;
+}
+
+.price_box{
+  width: 100%;
+  height: 40px;
+  line-height: 28rpx;
+  position: relative;
+}
+
+.price_box text {
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  position: absolute;
+  top: 0px;
+}
+
+.price_box input {
+  width: 80%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  position: absolute;
+  left: 65px;
+}
+
+.add_content{
+  width: 93%;
+  height: 320rpx;
+  line-height: 28rpx;
+}
+
+.bottom_issue{
+  position: fixed;
+  background-color: #f10215;
+  color: white;
+  width: 690rpx;
+  text-align: center;
+  height: 100rpx;
+  bottom: 20rpx;
+  line-height: 50px;
+  font-size: 14px;
+}

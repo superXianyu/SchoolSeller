@@ -1,0 +1,20 @@
+{
+    "tabBar": {
+        "color": "#333",
+        "selectedcolor": "#86c85c",
+        "backgroundColor": "#fff",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/test/test",
+                "text": "小跳",
+                "iconPath": "icon/boy.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "小跳",
+                "iconPath": "icon/boy.png"
+            }
+        ]
+    }
+}

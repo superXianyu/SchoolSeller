@@ -1,0 +1,93 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    font-family: 微软雅黑;
+}
+
+.my_mess_box {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid#e2e2e2;
+}
+
+.img_box {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.my_mess_box image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nick_name {
+    width: 100%;
+    height: 14px;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    display: block;
+}
+
+.pulish_box {
+    width: 100%;
+    height: 55px;
+    position: relative;
+    border-bottom:1px solid#e2e2e2; 
+}
+
+.pulish_box image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.describ_word {
+    width: 100px;
+    height: 22px;
+    font-size: 12px;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    color: #333;
+    line-height: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.author {
+    width: 100px;
+    height: 22px;
+    font-size: 12px;
+    position: absolute;
+    left: 60px;
+    top: 30px;
+    line-height: 22px;
+    color: #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pulish_box .like_img {
+    width: 48rpx;
+    height: 112rpx;
+    position: absolute;
+    right: 30rpx;
+    top: 0rpx;
+    z-index: 0;
+}
+
+.pulish_box .like_img image{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin: 0px;
+    top: 30rpx;
+}

@@ -1,0 +1,58 @@
+<!--pages/comments/comments.wxml-->
+<view class='wrap' bindtap='to_detail'>
+    <view class='shareTop'>
+        <image class='touxiang' src='{{touxiang}}'></image>
+        <view class='nickName'>
+            <text>{{nickName}}</text>
+        </view>
+        <view class='school'>
+            <text>{{school}}</text>
+        </view>
+        <view class='shareTime'>
+            <text>{{createDate}}</text>
+        </view>
+    </view>
+    <view class='shareContent'>
+        <text>{{shareContent}}</text>
+    </view>
+    <view class='shareImg' bindtap='to_showImg'>
+        <image wx:for="{{moodImgs}}" wx:for-item="item" wx:for-index="index" src='{{item}}' data-src='{{item}}' wx:key="imgs1"></image>
+    </view>
+    <view class='share_bottom'>
+        <!-- <view class='forward_box' bindtap='to_forward' id='{{id}}' bindtap='to_detail'>
+            <image src='../../icon/forward.png'></image>
+            <text></text>
+        </view> -->
+        <view class='comment_box' id='{{id}}' catchtap='to_comment'>
+            <image src='../../icon/comment.png'></image>
+            <text></text>
+        </view>
+        <view class='like_box' bindtap='to_like' id='{{id}}'>
+            <image src='{{likeImg}}' id='{{index}}'></image>
+            <text id='{{index}}'>{{likeNum}}</text>
+        </view>
+    </view>
+    <view class='commentTop'>
+        <text>评  论</text>
+    </view>
+    <view class='shareComment' wx:for="{{comList}}" wx:for-item="item" wx:key="comment" wx:for-index="index">
+        <image class='comTouxiang' src='{{item.touxiang}}'></image>
+        <view class='comName'>
+            <text>{{item.nickName}}</text>
+        </view>
+        <view class='comContent'>
+            <text>{{item.content}}</text>
+        </view>
+    </view>
+    <view class='loading' bindtap='to_loading'>
+      <text>{{loadingText}}</text>
+    </view>
+    <view class='addComment' wx:if="{{IO}}">
+        <form>
+            <textarea placeholder='说点什么吧。。。。' fixed='true'  bindinput='change_comment' value='{{commentValue}}'  placeholder-class='plaCla'></textarea>
+        </form>
+        <button form-type='submit' bindtap='post_message'>
+            <text>发表</text>
+        </button>
+    </view>
+</view>

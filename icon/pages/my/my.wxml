@@ -1,0 +1,30 @@
+<view class='wrap'>
+    <view class='touxiang_box' bindtap='to_my_info'>
+          <image src='{{touxiang}}' class='touxiang'></image> 
+        <text class='nick_name' id='nick_name'>{{nick_name}}</text>
+    </view>
+    <view class='cut_line'></view>
+    <view class='menu_box'>
+        <view class='goods-box' bindtap='to_my_pulish'>
+            <image src='{{my_goods}}' class='my_goods'></image> 
+            <text class='describ_word'>{{goods_word}}</text>
+        </view>
+        <view class='goods-box' bindtap='to_my_like'>
+            <image src='{{my_like}}' class='my_goods'></image> 
+            <text class='describ_word'>{{like_word}}</text>
+        </view>
+        <view class='goods-box' bindtap='to_my_bill'>
+            <image src='{{my_bill}}' class='my_goods'></image> 
+            <text class='describ_word'>{{bill_word}}</text>
+        </view>
+        <view class='cut_line'></view>
+        <view class='goods-box' bindtap='to_my_about'>
+            <image src='{{my_about}}' class='my_goods'></image> 
+            <text class='describ_word'>{{about_word}}</text>
+        </view>
+        <view class='goods-box' bindtap='getout'>
+            <image src='{{my_out}}' class='my_goods'></image> 
+            <text class='describ_word'>{{out_word}}</text>
+        </view>
+    </view>
+</view>

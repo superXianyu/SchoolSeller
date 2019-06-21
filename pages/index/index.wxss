@@ -1,0 +1,81 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.user_name{
+    width: 140px;
+    height: 24px;
+    color: #333;
+    position: absolute;
+    font-size: 14px;
+    line-height: 44px;
+    left: 32%;
+    top: 250px;
+    text-align: center;
+    font-family: 微软雅黑;
+}
+
+.live {
+    width: 140px;
+    height: 44px;
+    background: #96c85c;
+    color: #fff;
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    line-height: 44px;
+    left: 32%;
+    top: 290px;
+}
+
+.unlive {
+    width: 140px;
+    height: 44px;
+    background: #96c85c;
+    color: #fff;
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    line-height: 44px;
+    left: 32%;
+    top: 290px;
+}
+
+.wrap image {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 41%;
+    top: 180px;
+    border-radius: 50%;
+}
+
+.no_openid{
+     width: 140px;
+    height: 44px;
+    background: #e2e2e2;
+    color: #fff;
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    line-height: 44px;
+    left: 32%;
+    top: 344px;
+    text-align: center;
+}
+
+.un_no_openid{
+     width: 140px;
+    height: 44px;
+    background: #e2e2e2;
+    color: #fff;
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    line-height: 44px;
+    left: 32%;
+    top: 344px;
+    text-align: center;
+}

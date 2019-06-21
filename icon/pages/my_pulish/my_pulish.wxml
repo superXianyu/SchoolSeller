@@ -1,0 +1,21 @@
+<view class='wrap'>
+    <view class='my_mess_box'>
+        <view class='img_box'>
+            <image src='{{touxiang}}'></image>
+        </view>
+        <text class='nick_name'>{{nick_name}}</text>
+    </view>
+    <block wx:for="{{goods_num}}" wx:for-item="item" wx:key="me">
+        <view class='all_box'>
+            <view class='pulish_box' bindtouchstart='touch_s' bindtouchmove='touch_m' bindtouchend='touch_e' style='{{item.mov_style}}' data-index="{{index}}" bindtap='to_goods' data-post_id='{{item.post_id}}'>
+                <image src='{{item.imgs}}'></image>
+                <text class='describ_word'>{{item.describ_word}}</text>
+                <text class='author'>@{{item.author}}</text>
+                <text class="zhuang_tai">状态 : </text>
+                <text class='{{zhaung_mess}}'>{{item.zhuang_tai_word}}</text>
+            </view>
+            <view data-index="{{index}}" data-post_id='{{item.post_id}}' bindtap='del_message' class='del'>删除</view>
+        </view>
+    </block>
+      <view class='my_add' bindtap='to_my_add'><text> 我要发布</text></view>
+</view>

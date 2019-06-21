@@ -1,0 +1,23 @@
+<view class='warp'>
+    <view class="navigationbar">
+        <input type='txt' class='search'>
+        <image src='{{img_navigation_search}}' class='search_img'></image>
+        </input>
+    </view>
+    <view class='content'>
+        <view class='choose_bar_box'>
+            <view class='{{clothes}}'bindtap='to_clothes'>服饰</view>
+            <view class='{{electron}}' bindtap='to_electron'>电子设备</view>
+            <view class='{{study}}' bindtap='to_study'>学习用具</view>
+            <view class='{{others}}' bindtap='to_others'>其他</view>
+        </view>
+        <view class='dian'></view>
+        <block wx:for='{{goods}}' wx:for-index='index' wx:for-item='item' wx:key='me'>
+            <view class='{{item.goods_class}}' bindtap='to_goods' id='{{item.post_id}}'>
+                <image src='{{item.imgs}}' class='goods_img'></image>
+                <text class='goods_word'>{{item.goods_word}}</text>
+                <text class='goods_price'>¥ : {{item.goods_price}}</text>
+            </view>
+        </block>
+    </view>
+</view>

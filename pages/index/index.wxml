@@ -1,0 +1,6 @@
+<view class='wrap'>
+    <image src='{{avatar}}'></image>
+    <text class='user_name'>{{nick_name}}</text>
+    <button bindgetuserinfo='get_user_info' open-type='getUserInfo' class='{{is_live}}' lang='zh_CN' >获取您的用户信息</button>
+    <view bindtap='no_openid' class='{{is_openid}}'>不获取您的信息</view>
+</view>
